@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Changing 2 </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+<script>
+    
+function showCongratulations(theButtonClicked){
+  let x = document.getElementById("result_display");
+        
+  if (x.innerHTML === "") {
+    x.innerHTML =  "Congratulations, you did it!<p>You got the page to update!</p>"
+      theButtonClicked.innerHTML = "Click Me Again!";
+  } else {
+    x.innerHTML = ""
+      theButtonClicked.innerHTML = "Click Me!";
+  }
+}
+    </script>
+
+    
+</head>
+
+<body>
+
+<h1>Exercice Week 1</h1>
+
+
+<button onclick="showCongratulations(this)" class="btn">Click Me!</button><br><br>
+<section id="result_display"></section>
+
+ </body>
+</html>
