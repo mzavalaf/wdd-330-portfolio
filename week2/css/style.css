@@ -1,0 +1,47 @@
+body {
+  color: gray; 
+  background-color: whitesmoke;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: #003366;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+      
+#result_display { 
+  background-color:slategray;
+  color: snow;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#textNote {
+  color: grey;
+  width: 100%;
+  padding: 50px 0;
+ 
+}
+
+.btn {
+  border: none;
+  background-color: forestgreen;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: azure;
+}
+
+a {
+    color:gray;
+}
+a:link {
+    
+  text-decoration: none;
+}
