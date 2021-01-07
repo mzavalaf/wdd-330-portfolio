@@ -1,7 +1,7 @@
 const links =
       [
           {
-            label: "Mosiah 1",
+            label: "Week 1",
             url: "week1/index.html"
               
           },
