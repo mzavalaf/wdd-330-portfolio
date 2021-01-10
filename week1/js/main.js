@@ -2,17 +2,17 @@ const links =
       [
           {
             label: "Week 1",
-            url: "index.html"
+            url: "https://mzavalaf.github.io/wdd-330-portfolio/index.html"
               
           },
           
           {
             label: "Week 2",
-            url: "week2/practice1.html" 
+            url: "practice1.html" 
           },   
            {
             label: "Go Panthers",
-            url: "week3/practice2.html" 
+            url: "practice2.html" 
           } 
       ]
 
