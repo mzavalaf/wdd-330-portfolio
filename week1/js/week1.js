@@ -13,7 +13,7 @@ function addEntry() {
 function showData() {
   document.getElementById("data_saved").innerHTML = ""
   for (var i = 0, len = localStorage.length; i < len; ++i) {
-      document.getElementById("data_saved").innerHTML += localStorage.key(i) + ": " + localStorage.key(i) + ": " + localStorage.getItem(
+      document.getElementById("data_saved").innerHTML += localStorage.key(i) + ": " + localStorage.getItem(
           localStorage.key(i)) + "<br>";
   }
 }
