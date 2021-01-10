@@ -1,16 +1,26 @@
 body {
   color: gray; 
   background-color: whitesmoke;
-  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+header h1 {
   background-color: #003366;
   color: whitesmoke;
   padding: 1em;
 }
 
+nav ul {padding: 0;}
+
+nav ul li {
+   float: left;
+   list-style-type: none;
+   }
+
+nav ul li a {
+  display: blockpadding: .5rem 1rem;
+  background-color: #003366; 
+}
       
 #result_display { 
   background-color:slategray;
@@ -19,13 +29,6 @@ h1 {
   padding: 50px 0;
   text-align: center;
   margin-top: 20px;
-}
-
-#textNote {
-  color: grey;
-  width: 100%;
-  padding: 50px 0;
- 
 }
 
 .btn {
