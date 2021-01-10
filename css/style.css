@@ -4,24 +4,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header h1 {
+h1 {
   background-color: #003366;
   color: whitesmoke;
   padding: 1em;
 }
-
-nav ul {padding: 0;}
-
-nav ul li {
-   float: left;
-   list-style-type: none;
-   }
-
-nav ul li a {
-  display: blockpadding: .5rem 1rem;
-  background-color: #003366; 
-}
-      
+     
 #result_display { 
   background-color:slategray;
   color: snow;
