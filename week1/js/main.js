@@ -11,22 +11,20 @@ const links =
             url: "week2/index.html" 
           },   
            {
-            label: "Week 3",
+            label: "Go Panthers",
             url: "week3/index.html" 
           } 
       ]
 
-const myList = document.getElementById("list");
+const ol = document.querySelector("ol");
 
-for (let i=0; i < links.length; i++)
-    {
-        let listItem = document.createElement("li");
-        let anchor = document.createElement("a");
-        
-        anchor.setAttribute("href", links[i].url);
-        anchor.innerText = links[i].label;
-        
-        listItem.appendChild(anchor);
-        myList.appendChild(listItem);
+for (const item of links) {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.setAttribute('href', item.url);
+    a.textContent = item.label;
+    li.appendChild(a);
+    
+    ol.appendChild(li);
     }
 
