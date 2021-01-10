@@ -1,19 +1,15 @@
 const links =
       [
           {
-            label: "Doing Stuff Week 1.1",
+            label: "Doing Stuff 1.1",
             url: "week1/stuff1.html"
               
           },
           
           {
-            label: "Doing Stuff Week 1.2",
-            url: "week2/stuff2.html" 
-          },   
-           {
-            label: "Go Panthers",
-            url: "week3/index.html" 
-          } 
+            label: "Doing Stuff 1.2",
+            url: "week1/stuff2.html" 
+          }
       ]
 
 const ul = document.querySelector("ul");
