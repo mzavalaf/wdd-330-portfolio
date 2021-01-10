@@ -36,3 +36,26 @@ a:link {
     
   text-decoration: none;
 }
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px 0px;
+  width: 250px;
+  font-family: "Open Sans";
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: rgb(0, 140, 193);
+  border-radius: 5px;
+  color: white;
+  margin: 0px 5px;
+}
+
+#address_list {
+  padding: 20px 0px;
+  
+}

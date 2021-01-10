@@ -3,17 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mosiah Zavala WDD 330 Portfolio</title>
+    <title>Local Storage Sample WDD 330 Portfolio</title>
      <link rel="stylesheet" href="css/style.css" />
       
       
       
   </head>
   <body>
-<h1>Practice-1 WDD 330 Portfolio</h1>
-      
+<h1>Local Storage Sample</h1>
+<input id="name" type="text" placeholder="Name"><br>
+<textarea id="address" rows="2" placeholder="Address"></textarea>
+<section>
+    <button onclick="addEntry()">Add Entry</button>
+    <button onclick="displayAddress()">Display Address Book</button>
+    <button onclick="clearLocalStorage()">Reset Address Book</button>
+</section>
+<section id="address_list"></section> 
 
       
       
   </body>
+  <script>
+    function addEntry() {
+        var name = document.getElementById("name").value
+        var address = document.getElementById("address").value
+        localStorage.setItem(name, address)
+        document.getElementById("address_list").innerHTML = name + "'s address added!"
+        document.getElementById("name").value = ""
+        document.getElementById("address").value = ""
+
+    }
+
+    function displayAddress() {
+        document.getElementById("address_list").innerHTML = ""
+        for (var i = 0, len = localStorage.length; i < len; ++i) {
+            document.getElementById("address_list").innerHTML += localStorage.key(i) + ": " + localStorage.getItem(
+                localStorage.key(i)) + "<br>";
+        }
+    }
+
+    function clearLocalStorage() {
+        localStorage.clear();
+        document.getElementById("address_list").innerHTML = "Address book cleared!"
+    }
+</script>
 </html>
