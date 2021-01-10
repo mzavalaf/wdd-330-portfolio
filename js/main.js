@@ -2,13 +2,15 @@ const links =
       [
           {
             label: "Home",
-            url: "https://mzavalaf.github.io/wdd-330-portfolio/index.html"  
+            url: "#"
+              
           },
-           
-           {
-            label: "Local Storage Sample",
-            url: "localstorage.html" 
-          }
+          
+          {
+            label: "Week 1",
+            url: "week1/index.html" 
+          } 
+         
       ]
 
 const ul = document.querySelector("ul");

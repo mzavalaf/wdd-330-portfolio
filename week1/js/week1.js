@@ -1,13 +1,25 @@
-function showNote1(theButtonClicked){
-  var note = document.getElementById("textNote");
-        
-  if (note.innerHTML === "") {
-    note.innerHTML =  "One of the things that powerfully caught my attention was the Mobile First course. I'm one of those who focused on a view for desktop devices or laptops, however, this helped me recognize that most of the devices that users are going to use are small screens, although I know that I have always Striving to create very responsive views I know I have to change my design idea and focus first on views and procedures for mobile devices."
-      theButtonClicked.innerHTML = "Hide!";
-  } else {
-    note.innerHTML = ""
-      theButtonClicked.innerHTML = "Show Me!";
+function addEntry() {
+  var name = document.getElementById("name").value
+  var age = document.getElementById("age").value
+  var address = document.getElementById("address").value
+  localStorage.setItem(name, age, address)
+  document.getElementById("data_saved").innerHTML = "Data is Saved"
+  document.getElementById("name").value = ""
+  document.getElementById("age").value = ""
+  document.getElementById("address").value = ""
+
+}
+
+function showData() {
+  document.getElementById("data_saved").innerHTML = ""
+  for (var i = 0, len = localStorage.length; i < len; ++i) {
+      document.getElementById("data_saved").innerHTML += localStorage.key(i) + ": " + localStorage.key(i) + ": " + localStorage.getItem(
+          localStorage.key(i)) + "<br>";
   }
 }
 
+function clearLocalStorage() {
+  localStorage.clear();
+  document.getElementById("data_saved").innerHTML = "Reset Completed!"
+}
 

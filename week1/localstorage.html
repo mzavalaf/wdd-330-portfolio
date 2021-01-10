@@ -11,16 +11,18 @@
   </head>
   <body>
 <h1>Local Storage Sample</h1>
+
+
+
 <input id="name" type="text" placeholder="Name"><br>
+<input id="age" type="text" placeholder="Age"><br>
 <textarea id="address" rows="2" placeholder="Address"></textarea>
 <section>
-    <button onclick="addEntry()">Add Entry</button>
-    <button onclick="displayAddress()">Display Address Book</button>
-    <button onclick="clearLocalStorage()">Reset Address Book</button>
+    <button onclick="addEntry()">Save</button>
+    <button onclick="showData()">Show Data Saved</button>
+    <button onclick="clearLocalStorage()">Reset Data</button>
 </section>
-<section id="address_list"></section> 
-
-      
+<section id="data_saved"></section> 
       
   </body>
   <script src="js/week1.js"></script>
