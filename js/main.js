@@ -1,6 +1,12 @@
 const links =
       [
           {
+            label: "Home",
+            url: "index.html"
+          
+          },
+
+          {
             label: "Week 1",
             url: "week1/index.html"
           
