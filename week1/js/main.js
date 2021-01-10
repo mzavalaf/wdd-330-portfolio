@@ -2,14 +2,14 @@ const links =
       [
           {
             label: "Home",
-            url: "https://mzavalaf.github.io/wdd-330-portfolio/index.html"
-              
+            url: "https://mzavalaf.github.io/wdd-330-portfolio/index.html"  
           },
           
           {
             label: "Practice 1",
             url: "practice1.html" 
-          },   
+          },  
+           
            {
             label: "Practice 2",
             url: "practice2.html" 
