@@ -1,22 +1,22 @@
 const links =
       [
           {
-            label: "Week 1",
+            label: "Home",
             url: "https://mzavalaf.github.io/wdd-330-portfolio/index.html"
               
           },
           
           {
-            label: "Week 2",
+            label: "Practice 1",
             url: "practice1.html" 
           },   
            {
-            label: "Go Panthers",
+            label: "Practice 2",
             url: "practice2.html" 
           } 
       ]
 
-const ol = document.querySelector("ol");
+const ul = document.querySelector("ul");
 
 for (const item of links) {
     const li = document.createElement('li');
@@ -25,6 +25,6 @@ for (const item of links) {
     a.textContent = item.label;
     li.appendChild(a);
     
-    ol.appendChild(li);
+    ul.appendChild(li);
     }
 
