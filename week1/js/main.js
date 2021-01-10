@@ -16,7 +16,7 @@ const links =
           } 
       ]
 
-const ol = document.querySelector("ol");
+const ul = document.querySelector("ul");
 
 for (const item of links) {
     const li = document.createElement('li');
@@ -25,6 +25,6 @@ for (const item of links) {
     a.textContent = item.label;
     li.appendChild(a);
     
-    ol.appendChild(li);
+    ul.appendChild(li);
     }
 
