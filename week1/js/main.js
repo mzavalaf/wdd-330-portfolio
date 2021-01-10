@@ -1,15 +1,19 @@
 const links =
       [
           {
-            label: "Practice 1",
-            url: "week1/practice1.html"
+            label: "Week 1",
+            url: "index.html"
               
           },
           
           {
-            label: "Practice 2",
-            url: "week1/practice2.html" 
-          }
+            label: "Week 2",
+            url: "week2/practice1.html" 
+          },   
+           {
+            label: "Go Panthers",
+            url: "week3/practice2.html" 
+          } 
       ]
 
 const ol = document.querySelector("ol");
