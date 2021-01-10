@@ -1,18 +1,18 @@
 const links =
       [
           {
-            label: "Doing Stuff 1.1",
+            label: "Practice 1.1",
             url: "week1/stuff1.html"
               
           },
           
           {
-            label: "Doing Stuff 1.2",
+            label: "Practice 1.2",
             url: "week1/stuff2.html" 
           }
       ]
 
-const ul = document.querySelector("ul");
+const ol = document.querySelector("ol");
 
 for (const item of links) {
     const li = document.createElement('li');
@@ -21,6 +21,6 @@ for (const item of links) {
     a.textContent = item.label;
     li.appendChild(a);
     
-    ul.appendChild(li);
+    ol.appendChild(li);
     }
 
