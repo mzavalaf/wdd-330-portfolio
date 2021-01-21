@@ -7,8 +7,8 @@ const links =
           },
           
           {
-            label: "Week 1",
-            url: "week1/index.html" 
+            label: "Local Storage Sample",
+            url: "https://mzavalaf.github.io/wdd-330-portfolio/week1/localstorage.html" 
           } 
          
       ]
