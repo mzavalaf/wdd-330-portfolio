@@ -13,15 +13,16 @@ const links =
          
       ]
 
-const ul = document.querySelector("ul");
+const myList = document.querySelector("week1List");
 
-for (const item of links) {
-    const li = document.createElement('li');
-    const a = document.createElement('a');
-    a.setAttribute('href', item.url);
-    a.textContent = item.label;
-    li.appendChild(a);
-    
-    ul.appendChild(li);
+for (let i=0; i < links.length; i++) 
+{
+    let listItem = document.createElement("li");
+    let anchor = document.createElement("a");
+    anchor.setAttribute("href", links[i].url);
+    anchor.innerText = links[i].label;
+    listItem.appendChild(anchor);
+    myList.appendChild(listItem);
+
     }
 
