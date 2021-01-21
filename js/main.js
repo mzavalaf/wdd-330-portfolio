@@ -13,7 +13,7 @@ const links =
          
       ]
 
-const ul = document.querySelector("ul");
+const ul = document.querySelector("list");
 
 for (const item of links) {
     const li = document.createElement('li');
